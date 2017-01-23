@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <meta charset="UTF-8"/>
@@ -9,35 +9,73 @@
     <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAADDxoAD++8QAafLQAAlCcAAxfowABTZQAFm2tAA1gmAAEaq4ABna+AAR5vgAcg8IAAkiSAC+35QAIaqYAK5XJACqh2QBL1/4AAne8ADSl3gA5tugAAVadAAd0tAAYk9AAE2isAEXE8gAlmNIAA3K6ADCf1wACVJsAIp7jAAJwuAABY6sABmCrAAtjmgAFVakAI37BAAhrpQAqpt0ARMP2ABR1sgAEZaYAAn3GAAaEywAWbbAAD3W7AEnP/gAShsUAM6HbAANzuQAKaKYAC2imAEK88gAzo94ANaPeAEK/8gACYaoAOb7tAAFHkAAwnNEAAkeQADGe3ABBxfIAN6XhAB10tgAEVJUAO6/mABBxtwADTKQADWOlAAZnswAFcbgAAV2mAB10twAJd8AACmadAARzuwAMYJUAD4TNAEfD+QARbrAAF4a/ABNusAAdjcQAEXu1AAZ4vgAHb64AKpfRAErT/gA6uuoAJpHBABFqowAHUJoABXnEAEa68gAroNkAKIjKADq87QAJYpkAA2+3AABVnQA3uOgABWanAGPR+wAVZ6wAOq3mAABDjgAMZ5wADmq9AAFTmwALe78ADWOXAEPA8wArktAAF2WqABx8vAAEZ7YAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQ9RTtdTxQAAAAAAAAAFAQNayRtc3MfEQAAAAAAIE1HIi5cB0olYQ4RAAAAFyZzTghGQXJDFWY4NQAACURMD0gZHQAAAAAAZW5ZADRXCyEMAAAAAAAAABYKWx4sEwZYAAAAAAAAABxLMlR1K0InAAAAAAAAAFIzMmNaXmdRAAAAAAAAAAEjViowAGRwUgAAAAAAUjlSVW8pAABJVxRTUlIFaS0DYBh0AAAAAGxxPzo2Pjw8EBtgAAAAAAAAEigaakA3MRRiAAAAAAAAAAACL1BoXwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//AAD8BwAA8AMAAOABAADAAQAAgPgAAIP4AAAH8AAAD+AAAB/BAAAfAwAAAAcAAIAPAADAHwAA4P8AAP//AAA="
           rel="icon" type="image/x-icon"/>
 
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Coming+Soon|Marck+Script" rel="stylesheet"/>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
-          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
     <link rel="stylesheet" href="css/main.css"/>
 
-    <title>Kasia i Daniel</title>
+    <title>Kasia &amp; Daniel</title>
 </head>
 <body>
 
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Kasia &amp; Daniel</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#"><i class="fa fa-home fa-fw" aria-hidden="true"></i> Strona główna</a>
+                </li>
+                <li><a href="#about"><i class="fa fa-venus-mars" aria-hidden="true"></i> O nas</a>
+                </li>
+                <li><a href="#contact"><i class="fa fa-envelope-open" aria-hidden="true"></i> Kontakt</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+
 <section class="container">
 
-    <nav>
-        <div class="clock-parent">
-            <span id="clock"></span>
-        </div>
-    </nav>
-
     <main>
-
+        <div class="clock-parent row">
+            <div class="col-sm-4">
+                <div class="clock-photo clock-photo-her">
+                    <div class="clock-photo-element clock-photo-brown"></div>
+                    <div class="clock-photo-element clock-photo-white"></div>
+                    <div class="clock-photo-element-name font-kasia">Kasia</div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <p class="clock-icons"><i class="fa fa-female" aria-hidden="true"></i><i class="fa fa-male" aria-hidden="true"></i></p>
+                <div id="clock"></div>
+            </div>
+            <div class="col-sm-4">
+                <div class="clock-photo clock-photo-him">
+                    <div class="clock-photo-element clock-photo-brown"></div>
+                    <div class="clock-photo-element clock-photo-white"></div>
+                    <div class="clock-photo-element-name font-daniel">Daniel</div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
-
+        <p>Kasia &amp; Daniel <span  th:text="${#dates.format(#dates.createNow(), 'yyyy')}">2016</span></p>
     </footer>
 
 </section>
 
 <script src="js/jquery.min.js"></script>
+<script src="js/tether.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/finalcountdown.min.js"></script>
 <script src="js/main.js"></script>
