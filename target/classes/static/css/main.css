@@ -11,22 +11,32 @@
 }
 
 html, body {
-    font-family: 'Lobster', cursive;
+    font-family: 'Lobster', sans-serif;
     height: 100%;
     width: 100%;
 }
 
+body label {
+    font-weight: normal;
+}
+
 .font-kasia {
-    font-family: 'Marck Script', cursive;
+    font-family: 'Marck Script', sans-serif;
 }
 
 .font-daniel {
-    font-family: 'Coming Soon', cursive;
+    font-family: 'Just Me Again Down Here', sans-serif;
 }
 
 body {
     padding-top: 30px;
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (min-width : 768px) and (max-width: 992px) {
+    body {
+        padding-top: 60px;
+    }
 }
 
 .navbar-default {
@@ -61,6 +71,20 @@ body {
 .navbar-default .navbar-nav > .open > a:hover {
     color: #fff;
     background-color: #593b1e;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #fff;
+    color: #fff;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background-color: #593b1e;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
 }
 
 .clock-parent {
@@ -127,8 +151,15 @@ body {
     background-size: contain;
 }
 
+.fa-circle-o-second {
+    margin-left: -5px;
+}
+
+.page-header .fa-circle-o-second {
+    margin-left: -8px;
+}
+
 .page-header {
-    margin-bottom: 0px;
     line-height: 2em;
     font-size: 1.5em;
 }
@@ -137,7 +168,29 @@ body {
     margin-bottom: 0px;
 }
 
+.contact .form-control,
+.contact label {
+    width: 100%;
+}
+
+.contact [type=button]:disabled{
+    border-color: #ccc;
+    background-color: #ddd;
+}
+
+.contact [type=button] {
+    border-color: #b49d7c;
+    background-color: #b49d7c;
+    color: #fff;
+}
+
+.contact-data {
+    font-size: 1.5em;
+    text-align: center;
+}
+
 footer {
+    margin-top: 20px;
     color: #222;
     text-align: center;
     line-height: 2em;

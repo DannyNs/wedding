@@ -16,6 +16,7 @@ public class IndexController {
     @RequestMapping("/{page}.html")
     public String index(Model model, @PathVariable String page) {
         model.addAttribute("page", page);
+
         return "layouts/index";
     }
 

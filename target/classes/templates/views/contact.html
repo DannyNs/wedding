@@ -3,3 +3,61 @@
         <p><i class="fa fa-envelope-open" aria-hidden="true"></i> Kontakt</p>
     </div>
 </div>
+
+<div class="row contact">
+    <div class="col-md-6 contact-data">
+        <div class="row">
+            <div class="col-sm-12 font-kasia">
+                <label>Kasia</label>
+                <p>Email: kasiabaranska@wp.pl</p>
+                <p>Telefon: 728 706 570</p>
+            </div>
+
+            <div class="col-sm-12">
+                &nbsp;
+            </div>
+
+            <div class="col-sm-12 font-daniel">
+                <label>Daniel</label>
+                <p>Email: danielkutyla@wp.pl</p>
+                <p>Telefon: 663 545 896</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="row">
+            <form action="contact.html" method="post">
+                <div class="col-sm-12">
+                    <label>Imię i nazwisko: <input class="form-control" type="text" name="name"/></label>
+                </div>
+
+                <div class="col-sm-12">
+                    <label>Email: <input class="form-control" type="text" name="email"/></label>
+                </div>
+
+                <div class="col-sm-12">
+                    <label>Temat: <input class="form-control" type="text" name="topic"/></label>
+                </div>
+
+                <div class="col-sm-12">
+                    <label>Odbiorca:
+                        <select class="form-control" name="target">
+                            <option value="kasiadaniel">Kasia &amp; Daniel</option>
+                            <option value="kasia">Kasia</option>
+                            <option value="daniel">Daniel</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="col-sm-12">
+                    <label>Wiadomość: <textarea class="form-control" name="content"></textarea></label>
+                </div>
+
+                <div class="col-sm-12">
+                    <input type="button" disabled="disabled" class="form-control" name="send" value="Wyślij"/>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
