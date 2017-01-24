@@ -119,18 +119,18 @@ body {
     color: #593b1e;
 }
 
-.clock-photo-element {
+.photo-element {
     width: 200px;
     height: 200px;
 }
 
-.clock-photo-brown {
+.photo-element-brown {
     margin-top: -5px;
     margin-left: -5px;
     background-color: #b49d7c;
 }
 
-.clock-photo-white {
+.photo-element-white {
     margin-top: -190px;
     margin-left: 5px;
     background-color: #593b1e;
@@ -147,6 +147,9 @@ body {
     margin-bottom: 20px;
     width: 170px;
     height: 170px;
+}
+
+.clock-photo-element-photo-daniel {
     background: #593b1e url('../images/daniel.jpg') no-repeat center;
     background-size: contain;
 }
@@ -173,12 +176,12 @@ body {
     width: 100%;
 }
 
-.contact [type=button]:disabled{
+.contact [type=submit]:disabled{
     border-color: #ccc;
     background-color: #ddd;
 }
 
-.contact [type=button] {
+.contact [type=submit] {
     border-color: #b49d7c;
     background-color: #b49d7c;
     color: #fff;
@@ -187,6 +190,15 @@ body {
 .contact-data {
     font-size: 1.5em;
     text-align: center;
+}
+
+.image-width-100 {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.info-font-size {
+    font-size: 1.2em;
 }
 
 footer {
