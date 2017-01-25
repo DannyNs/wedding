@@ -154,6 +154,11 @@ body {
     background-size: contain;
 }
 
+.clock-photo-element-photo-kasia {
+    background: #593b1e url('../images/kasia.jpg') no-repeat center;
+    background-size: contain;
+}
+
 .fa-circle-o-second {
     margin-left: -5px;
 }
