@@ -19,7 +19,7 @@
 
             <div class="col-sm-12 font-daniel">
                 <label>Daniel</label>
-                <p>Email: danielkutyla@wp.pl</p>
+                <p id="contactForm" name="contactForm">Email: danielkutyla@wp.pl</p>
                 <p>Telefon: 663 545 896</p>
             </div>
         </div>
@@ -27,21 +27,26 @@
 
     <div class="col-md-6">
         <div class="row">
-            <form action="#" th:action="@{/contact.html}" th:object="${contactFormData}" method="post">
+            <div th:if="${success} != null" class="col-sm-12">
+                <p class="alert" th:classappend="${success} ? alert-success : alert-danger" th:text="${message}"></p>
+            </div>
+
+            <form id="contact-form" action="#" th:action="@{/contact.html}" th:object="${contactFormData}" method="post">
                 <div class="col-sm-12">
-                    <label>Imię i nazwisko: <input th:field="*{name}" class="form-control" type="text" name="name"/></label>
+                    <label>Imię i nazwisko: <input th:field="*{name}" data-validation="required" class="form-control" type="text"
+                                                   name="name"/></label>
                 </div>
 
                 <div class="col-sm-12">
-                    <label>Email: <input th:field="*{email}" class="form-control" type="text" name="email"/></label>
+                    <label>Email: <input th:field="*{email}" data-validation="email" class="form-control" type="text" name="email"/></label>
                 </div>
 
                 <div class="col-sm-12">
-                    <label>Temat: <input th:field="*{topic}" class="form-control" type="text" name="topic"/></label>
+                    <label>Temat: <input th:field="*{topic}" data-validation="required" class="form-control" type="text" name="topic"/></label>
                 </div>
 
                 <div class="col-sm-12">
-                    <label>Odbiorca:
+                    <label>Adresat:
                         <select th:field="*{target}" class="form-control" name="target">
                             <option value="kasiadaniel">Kasia &amp; Daniel</option>
                             <option value="kasia">Kasia</option>
@@ -51,7 +56,8 @@
                 </div>
 
                 <div class="col-sm-12">
-                    <label>Wiadomość: <textarea th:field="*{content}" class="form-control" name="content"></textarea></label>
+                    <label>Wiadomość: <textarea th:field="*{content}" data-validation="required" class="form-control"
+                                                name="content"></textarea></label>
                 </div>
 
                 <div class="col-sm-12">

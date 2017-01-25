@@ -1,11 +1,25 @@
 package com.dannyns.wedding.dto;
 
+import org.hibernate.validator.constraints.Email;
+
+import javax.validation.constraints.NotNull;
+
 public class ContactFormData {
 
+    @NotNull
     private String name;
+
+    @Email
+    @NotNull
     private String email;
+
+    @NotNull
     private String topic;
+
+    @NotNull
     private String target;
+
+    @NotNull
     private String content;
 
     public String getName() {
