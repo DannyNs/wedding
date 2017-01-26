@@ -155,10 +155,32 @@ body {
     font-size: 1.2em;
 }
 
+.error-font-size {
+    font-size: 2em;
+}
+
 footer {
     margin-top: 20px;
     color: #222;
     text-align: center;
     line-height: 2em;
     font-size: 1.5em;
+}
+
+.cloud-chat span {
+    padding: 5px 8px 4px;
+    color: #fff;
+    font-size: 1.4em;
+    border-radius: 4px;
+    max-width: 80%;
+}
+
+.cloud-left span {
+    float: left;
+    background-color: #b49d7c;
+}
+
+.cloud-right span {
+    float: right;
+    background-color: #593b1e;
 }
