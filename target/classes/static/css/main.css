@@ -96,9 +96,7 @@ body {
     color: #222;
     position: relative;
     border-radius: 1px;
-    margin: 20px 0;
     text-align: center;
-    padding: 20px;
 }
 
 .clock-parent > div > div {
@@ -108,55 +106,6 @@ body {
 .clock-parent #clock {
     line-height: 2em;
     font-size: 2em;
-}
-
-.clock-parent .clock-icons {
-    font-size: 5em;
-}
-
-.clock-parent .clock-photo {
-    position: relative;
-    color: #593b1e;
-}
-
-.photo-element {
-    width: 200px;
-    height: 200px;
-}
-
-.photo-element-brown {
-    margin-top: -5px;
-    margin-left: -5px;
-    background-color: #b49d7c;
-}
-
-.photo-element-white {
-    margin-top: -190px;
-    margin-left: 5px;
-    background-color: #593b1e;
-}
-
-.clock-photo-element-name {
-    line-height: 2em;
-    font-size: 2em;
-}
-
-.clock-photo-element-photo {
-    margin-top: -190px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    width: 170px;
-    height: 170px;
-}
-
-.clock-photo-element-photo-daniel {
-    background: #593b1e url('../images/daniel.jpg') no-repeat center;
-    background-size: contain;
-}
-
-.clock-photo-element-photo-kasia {
-    background: #593b1e url('../images/kasia.jpg') no-repeat center;
-    background-size: contain;
 }
 
 .fa-circle-o-second {
