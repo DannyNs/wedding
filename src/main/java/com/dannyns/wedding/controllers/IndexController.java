@@ -71,7 +71,7 @@ public class IndexController {
                 javaMailSender.send(message);
 
                 return "redirect:/contact.html?success=true#contactForm";
-            } catch (MessagingException e) {
+            } catch (Exception e) {
                 e.printStackTrace();
             }
         }
