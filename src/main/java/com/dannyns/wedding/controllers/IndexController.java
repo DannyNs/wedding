@@ -2,6 +2,7 @@ package com.dannyns.wedding.controllers;
 
 import com.dannyns.wedding.dto.ContactFormData;
 
+import org.hibernate.annotations.Cache;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
+import javax.persistence.Cacheable;
 import javax.validation.Valid;
 
 import static java.util.Objects.nonNull;
