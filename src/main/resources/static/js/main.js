@@ -4802,6 +4802,16 @@ $('#clock').countdown('2017/10/28 16:00:00')
         }
 
         $(this).html(event.strftime(format));
+    })
+    .on("finish.countdown", function(event) {
+        $(event.currentTarget).css('display', 'none');
+
+        var chatMessagess = $('.cloud-chat .clearfix');
+
+        $(chatMessagess[0]).css('display', 'none')
+        $(chatMessagess[1]).html('<span>Ja Daniel biorę sobie Ciebie Kasiu za żonę...</span>')
+        $(chatMessagess[2]).html('<span>Ja Kasia biorę sobie Ciebie Danielu za męża...</span>')
+        $(chatMessagess[3]).css('display', 'none');
     });
 
 $.validate({
